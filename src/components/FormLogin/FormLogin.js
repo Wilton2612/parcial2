@@ -62,7 +62,9 @@ const sendData = async () => {
         method: 'POST',
         body: JSON.stringify(datosEnviados),
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': 'http://localhost:8000'
+
         }
       })
 
@@ -79,6 +81,7 @@ const sendData = async () => {
       navigate('/books');
 
     } catch (error) {
+      console.log(error)
       console.error("Tenemos un problema con el inicio de sesión:", error);
     }
   }
