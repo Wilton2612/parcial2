@@ -28,7 +28,7 @@ Dentro de la carpeta src puede encontrar 3 carpetas:
 
 Adicionalmente, se usaron **React Router** para manejar la navegación en una aplicación. También, **React hooks**, más específicamente se uso *useState* para manejar los diferentes atributos de los libros, los atributos del usuario cuando se loguea, etc, y *useEffect* para hacer las peticiones al back-end, validaciones en el formulario y manejar los permisos del usuario. Asimismo, se usó **JSX** para renderizado de la estructura y la representación de la interfaz de usuario. 
 
-Por otra parte, al estructura general es: en el archivo App.js convergen la mayoría de componentes: **Protected**, **FormLogin** y **Card**, esto la intención de asociar cada componente a una ruta. De igual forma, en el componente **Card** se usa el componente **ChangeValue**. Por último, en el componente **Card** se tienen dos useEffect, uno para traer la lista de libros, el cual guarda la información en el useState books para después mostrar la lista en la función *renderCards* posteriormente exiet otro useEffect que se encarga de hacer la petición para un libro en particular. 
+Por otra parte, al estructura general es: en el archivo App.js convergen la mayoría de componentes: **Protected**, **FormLogin** y **Card**, esto con la intención de asociar cada componente a una ruta. De igual forma, en el componente **Card** se usa el componente **ChangeValue**. Por último, en el componente **Card** se tienen dos useEffect, uno para traer la lista de libros, el cual guarda la información en el useState books para después mostrar la lista en la función *renderCards* posteriormente existe otro useEffect que se encarga de hacer la petición para un libro en particular. 
 
 
 
