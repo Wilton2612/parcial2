@@ -5,11 +5,34 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-  
+import { IntlProvider } from "react-intl";
+import localeEsMessages from "./locales/es";
+import localeEnMessages from "./locales/en";
+
+const language = navigator.language || navigator.userLanguage;
+console.log("language: ", language);
+let messages;
+
+switch (language) {
+  case "es":
+    messages = localeEsMessages;
+    break;
+  case "en":
+    messages = localeEnMessages;
+    break;
+  // añadir más casos si son necesarios
+  default:
+    messages = localeEsMessages;
+}  
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <IntlProvider locale={language} messages={messages}>
+      <App />
+    </IntlProvider>
   </React.StrictMode>
 );
 

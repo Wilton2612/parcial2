@@ -1,0 +1,19 @@
+{
+    "enter_user": "enter the user",
+    "enter_password": "enter the user",
+    "sesion": "log in",
+    "logout": "log out",
+
+    "name": "Name",
+    "detail": "Go to detail",
+    "author": "Author",
+    "publisher": "Publisher",
+
+    "genre": "Genre",
+    "year": "Year",
+    "price": "Price",
+    "available_online": "Available online",
+    "summary": "Summary"
+
+
+}

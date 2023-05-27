@@ -4,32 +4,35 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Card from './components/Card/Card';
 import FormLogin from './components/FormLogin/FormLogin';
-import CardDetail from './components/CardDetail/CardDetail';
+import Protected from './components/Protected/Protected';
+
 
 function App() {
+ 
+
 
   return (
 
-    <div>
-    <Router>
+    <div style={{ marginTop: "50px", marginBottom: "50px" }}>
+      <Router>
 
-<Routes>
-<Route path="/books" element={<Card />} />
-<Route path="/books/:id" element={<CardDetail />} />
-<Route path="/login" element={<FormLogin />} />
-<Route path="/" element={<FormLogin to="/login" />} />
+        <Routes>
+          <Route path='/books' element={<Protected> <Card /> </Protected>} />
+          <Route path="/books/:id" element={<Protected> <Card /> </Protected>} />
+          <Route path="/login" element={<FormLogin />} />
+          <Route path="/" element={<FormLogin to="/login" />} />
 
-</Routes>
-
-
-</Router>
+        </Routes>
 
 
-  </div>
-  
+      </Router>
+
+
+    </div>
+
 
   )
-   
+
 
 }
 

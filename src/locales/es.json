@@ -1,0 +1,15 @@
+{
+    "enter_user": "Ingrese el usuario",
+    "enter_password": "Ingrese la contraseña",
+    "sesion": "iniciar sesión",
+    "logout": "cerrar sesión",
+    "name": "Nombre",
+    "detail": "Ir al detalle",
+    "author": "Autor",
+    "publisher": "Editorial",
+    "genre": "Género",
+    "year": "Año",
+    "price": "Precio",
+    "available_online": "Disponible en linea",
+    "summary": "Resumen"
+}
