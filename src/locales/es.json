@@ -11,5 +11,9 @@
     "year": "Año",
     "price": "Precio",
     "available_online": "Disponible en linea",
-    "summary": "Resumen"
+    "summary": "Resumen",
+
+    "user_required": "El usuario es requerido",
+    "user_password": "La contraseña es requerida",
+    "password_length": "La contraseña debe tener al menos 6 caracteres"
 }

@@ -39,9 +39,9 @@ export default function FormLogin() {
 
   const validate = () => {
     const errors = {};
-    if (!email) errors.email = "El usuario es requerido";
-    if (!password) errors.password = "La contraseña es requerida";
-    if (password.length < 6) errors.password = "La contraseña debe tener al menos 6 caracteres";
+    if (!email) errors.email = <FormattedMessage id="email_required" />;
+    if (!password) errors.password = <FormattedMessage id="password_required" />;
+    if (password.length < 6) errors.password = <FormattedMessage id="password_length" />;
     return errors;
   };
 

@@ -13,7 +13,12 @@
     "year": "Year",
     "price": "Price",
     "available_online": "Available online",
-    "summary": "Summary"
+    "summary": "Summary",
+
+    "user_required": "The user is required",
+    "user_password": "Password is required",
+    "password_length": "The password must be at least 6 characters"
+    
 
 
 }
